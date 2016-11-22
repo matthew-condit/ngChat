@@ -1,0 +1,17 @@
+<form>
+  <h3>Join your group now</h3>
+  <div class="form-group">
+    <label for=''></label>
+    <input required type='text' value='' class='form-control' placeholder='Display Name' [(ngModel)]="model.name" name="name" />
+  </div>
+  <div class="form-group">
+    <label for=''></label>
+    <input type='text' value='' class='form-control' placeholder="group-code" [(ngModel)]="model.groupCode" name="groupCode" />
+  </div>
+  <button type="button" class='btn btn-primary' (click)='onSubmit()'>Join Now</button>
+  <button type="button" class='btn btn-success' (click)='createGroup()'>Create New Group</button>
+  <p class='login-message' *ngIf="message">
+    {{message}}
+  </p>
+
+</form>

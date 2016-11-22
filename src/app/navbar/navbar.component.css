@@ -1,0 +1,39 @@
+nav {
+  background-color: rgba(3, 155, 229, 1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  z-index: 20;
+}
+nav h1, nav h2 {
+  display: inline-block;
+  color: white;
+  padding: 0 30px;
+  font-family: "Helvetica Neue", sans-serif;
+
+}
+nav h1 {
+  float: left;
+    font-size:2em;
+}
+nav h2 {
+  float:right;
+  font-size: 1.5em;
+}
+nav a {
+  padding: 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:visited,
+a:link {
+  color: white;
+}
+
+nav a:hover {
+  background-color: rgba(29, 177, 252, 1);
+}
+
+nav a.active {
+  border-bottom: 4px solid white;
+}
