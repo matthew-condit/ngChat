@@ -2,14 +2,13 @@
   <h3>Join your group now</h3>
   <div class="form-group">
     <label for=''></label>
-    <input required type='text' value='' class='form-control' placeholder='Display Name' [(ngModel)]="model.name" name="name" />
+    <input required type='text' value='' class='form-control' placeholder='username' [(ngModel)]="model.username" name="username" />
   </div>
   <div class="form-group">
     <label for=''></label>
-    <input type='text' value='' class='form-control' placeholder="group-code" [(ngModel)]="model.groupCode" name="groupCode" />
+    <input type='text' value='' class='form-control' placeholder="password" [(ngModel)]="model.password" name="password" />
   </div>
-  <button type="button" class='btn btn-primary' (click)='onSubmit()'>Join Now</button>
-  <button type="button" class='btn btn-success' (click)='createGroup()'>Create New Group</button>
+  <button type="button" class='btn btn-primary' (click)='onRegister()'>Join Now</button>
   <p class='login-message' *ngIf="message">
     {{message}}
   </p>

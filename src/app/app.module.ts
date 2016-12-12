@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { ChatWindowComponent } from './chat-window/chat-window.component';
+import { ChatInputComponent } from './chat-input/chat-input.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { LoginFormComponent } from './login-form/login-form.component';
     NavbarComponent,
     AboutComponent,
     LoginFormComponent,
+    ChatWindowComponent,
+    ChatInputComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
