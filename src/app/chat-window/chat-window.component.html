@@ -1,0 +1,13 @@
+<div class="chat-window container">
+  <div class="chat-header">
+    <img class="chat-avatar" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Colgate_primary_logo.png">
+    <h2>ngChatBot</h2>
+  </div>
+  <div class="messages">
+    <p *ngFor="let message of messages">{{message}}</p>
+  </div>
+  <form (ngSubmit)="onSend()">
+    <input id="m" name='m' [(ngModel)]="newMessage" autocomplete="off"/>
+    <button id='send' type="submit">Send</button>
+  </form>
+</div>

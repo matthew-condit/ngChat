@@ -1,0 +1,55 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height:92vh;
+}
+
+.messages {
+
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: flex-end;
+  background-color: #eee;
+  border: 2px solid #ccc;
+}
+
+.chat-header {
+  background-color: #ddddee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+  vertical-align: middle;
+}
+
+.chat-avatar {
+  float: left;
+  height:100px;
+  margin-right:50px;
+}
+
+p {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin: 0;
+}
+p:nth-child(odd) {
+  background-color: #ddd;
+}
+
+form{
+  flex-basis: 100px;
+}
+
+input {
+  height: 100%;
+  width: 90%;
+}
+
+button {
+  width: 9.5%;
+  margin:0;
+  border: none;
+  background-color:rgba(3, 155, 229, 1);
+  color: white;
+  height: 100%;
+
+}
